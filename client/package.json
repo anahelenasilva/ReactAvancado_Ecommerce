@@ -11,7 +11,9 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "test": "jest",
+    "test:ci": "jest --runInBand",
     "test:watch": "yarn test --watch",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public"
   },
